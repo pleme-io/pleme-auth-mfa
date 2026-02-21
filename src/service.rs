@@ -115,8 +115,6 @@ impl MfaService {
             self.config.totp_skew,
             self.config.totp_step,
             secret_bytes,
-            None,
-            "".to_string(),
         ).map_err(|_| MfaError::SetupFailed)?;
 
         Ok(totp.check_current(totp_code).map_err(|_| MfaError::InvalidCode)?)
