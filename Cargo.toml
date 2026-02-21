@@ -8,6 +8,8 @@ description = "Multi-factor authentication (TOTP + backup codes) for authenticat
 repository = "https://github.com/pleme-io/pleme-auth-mfa"
 homepage = "https://github.com/pleme-io/pleme-auth-mfa"
 readme = "README.md"
+keywords = ["mfa", "totp", "2fa", "authentication", "backup-codes"]
+categories = ["authentication"]
 
 [dependencies]
 uuid = "1.11"
